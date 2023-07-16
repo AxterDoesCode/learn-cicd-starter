@@ -9,10 +9,10 @@ func TestGetAPIKey(t *testing.T) {
 	type args struct {
 		headers http.Header
 	}
-    testArg := args{
-        headers: http.Header{},
-    }
-    testArg.headers.Set("Authorization", "ApiKey fakeapikey")
+	testArg := args{
+		headers: http.Header{},
+	}
+	testArg.headers.Set("Authorization", "ApiKey fakeapikey")
 	tests := []struct {
 		name    string
 		args    args
