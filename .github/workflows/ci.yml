@@ -20,6 +20,9 @@ jobs:
 
       - name: Run Go tests
         run: go test --cover ./...
+
+      - name: Run security checks
+        run: gosec ./...
   formatting:
     name: formatting
     runs-on: ubuntu-latest
