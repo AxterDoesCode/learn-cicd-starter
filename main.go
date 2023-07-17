@@ -119,5 +119,7 @@ func addParseTimeParam(input string) (string, error) {
 }
 
 func empty(){
-    fmt.Sprintln("")
+
+
+
 }
